@@ -2,45 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
-export default function Home() {
+export default function ContactPage() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const serviceRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [visibleCards, setVisibleCards] = useState([
-    false,
-    false,
-    false,
-    false,
-  ]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number((entry.target as HTMLElement).dataset.index);
-
-          if (entry.isIntersecting) {
-            setVisibleCards((prev) => {
-              const updated = [...prev];
-              updated[index] = true;
-              return updated;
-            });
-          }
-        });
-      },
-      {
-        threshold: 0.2,
-      },
-    );
-
-    serviceRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -203,278 +168,81 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative overflow-hidden bg-black md:min-h-[540px]">
+      <section className="relative overflow-hidden bg-black md:min-h-[420px]">
         <div className="absolute inset-0 md:hidden">
           <Image
             src="/hero-wall1.jpeg"
             alt="Stone wall work"
             fill
-            loading="eager"
-            sizes="(max-width: 768px) 100vw, 0px"
+            sizes="100vw"
             className="object-cover object-[58%_45%]"
           />
         </div>
-
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent md:hidden" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent md:hidden" />
 
         <div className="absolute inset-y-0 right-0 hidden w-[75%] md:block">
           <Image
             src="/hero-wall-ext.png"
             alt="Stone wall work"
             fill
-            loading="eager"
-            sizes="(max-width: 768px) 100vw, 75vw"
+            sizes="75vw"
             className="object-cover object-[75%_center] md:object-center"
           />
         </div>
 
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent md:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent md:hidden" />
         <div className="absolute inset-0 hidden bg-gradient-to-r from-black via-black/85 to-transparent md:block" />
 
-        <div className="relative mx-auto max-w-7xl px-4 py-5 md:px-6 md:py-20">
+        <div className="relative mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-20">
           <div className="max-w-[320px] md:max-w-xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#7fb857] md:text-base">
-              Traditional Craftsmanship. Built to Last.
+              Contact Us
             </p>
 
             <h1 className="text-5xl font-semibold leading-tight md:text-6xl">
-              Dry Stone Dyking & Stonework in Argyll & Oban
+              Get in touch with P. Gillespie & Son
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/90 md:text-xl">
-              Over 40 years of experience delivering high-quality stonework
-              across Argyll, Oban and the Western Isles.
+              Contact us for quotes, enquiries or to discuss your stonework
+              project across Argyll, Oban and the Western Isles.
             </p>
-
-            <div className="mt-0 flex flex-col items-start gap-4 md:mt-8 md:flex-row">
-              <Link
-                href="/contact"
-                className="inline-flex w-[200px] items-center justify-center rounded-md bg-[#2f8f55] px-7 py-4 text-base font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:opacity-90 active:scale-95"
-              >
-                Get a Quote
-              </Link>
-
-              <a
-                href="tel:07767017746"
-                className="inline-flex w-[200px] items-center justify-center rounded-md border border-white/30 px-7 py-4 text-base font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white/10 active:scale-95"
-              >
-                Call Us Today
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#173d22]">
-        <div className="mx-auto max-w-7xl px-4 py-4 md:px-6">
-          <div className="grid grid-cols-2 gap-6 text-white md:grid-cols-4 md:gap-0">
-            <div className="flex items-center gap-3 md:pr-10">
-              <Image src="/tick.png" alt="Icon" width={52} height={52} />
-              <div>
-                <p className="text-2xl font-semibold">40+ Years</p>
-                <p className="text-base text-white/85">Experience</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 md:px-10">
-              <Image src="/family.png" alt="Icon" width={52} height={52} />
-              <div>
-                <p className="text-2xl font-semibold">Family Run</p>
-                <p className="text-base text-white/85">Business</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 md:px-10">
-              <Image src="/pin.png" alt="Icon" width={52} height={52} />
-              <div>
-                <p className="text-2xl font-semibold">Argyll &</p>
-                <p className="text-base text-white/85">Western Isles</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 md:pl-10">
-              <Image src="/page.png" alt="Icon" width={52} height={52} />
-              <div>
-                <p className="text-2xl font-semibold">Free</p>
-                <p className="text-base text-white/85">Quotes</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f8f6f2] text-black">
-        <div className="mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-10">
-          <div className="text-center">
+      <section className="bg-white text-black">
+        <div className="mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">
+          <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#2f8f55]">
-              Our Services
+              Contact Information
             </p>
 
-            <h2 className="mt-2 text-4xl font-semibold leading-tight md:text-5xl">
-              Expert Stonework Services
+            <h2 className="mt-3 text-4xl font-semibold leading-tight md:text-5xl">
+              Speak to us about your stonework project
             </h2>
 
-            <div className="mx-auto mt-4 h-[2px] w-16 bg-[#2f8f55]" />
-          </div>
+            <p className="mt-6 text-base leading-7 text-black/85 md:text-lg">
+              P. Gillespie & Son provide traditional dry stone dyking and
+              stonework across Argyll, Oban and the Western Isles.
+            </p>
 
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-4">
-            <div
-              ref={(el) => {
-                serviceRefs.current[0] = el;
-              }}
-              data-index="0"
-              className={`group overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-700 ${
-                visibleCards[0]
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-8 opacity-0"
-              } hover:-translate-y-1 hover:shadow-xl`}
-            >
-              <div className="relative h-48 w-full">
-                <Image
-                  src="/wall_img1.jpg"
-                  alt="Dry stone dyking"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-[50%_70%] transition duration-500 group-hover:scale-105"
-                />
-              </div>
+            <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
+              Whether you are planning a new build, repair work, retaining wall,
+              garden feature, entranceway, steps, seating area or another
+              stonework project, get in touch to discuss the job and request a
+              quote.
+            </p>
 
-              <div className="relative p-6 text-center">
-                <div className="absolute -top-8 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-[#173d22]">
-                  <Image src="/wall_white1.png" alt="" width={50} height={50} />
-                </div>
-
-                <h3 className="mt-10 text-2xl font-semibold leading-tight">
-                  Dry Stone Dyking
-                </h3>
-
-                <p className="mt-4 text-base leading-7 text-black/85">
-                  Traditional dry stone walls built with skill and experience to
-                  stand the test of time.
-                </p>
-              </div>
-            </div>
-
-            <div
-              ref={(el) => {
-                serviceRefs.current[1] = el;
-              }}
-              data-index="1"
-              className={`group overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-700 delay-100 ${
-                visibleCards[1]
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-8 opacity-0"
-              } hover:-translate-y-1 hover:shadow-xl`}
-            >
-              <div className="relative h-48 w-full">
-                <Image
-                  src="/bridge_img.jpg"
-                  alt="Bridges, pillars and entrances"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-[50%_42%] transition duration-500 group-hover:scale-105"
-                />
-              </div>
-
-              <div className="relative p-5 text-center">
-                <div className="absolute -top-8 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-[#173d22]">
-                  <Image
-                    src="/bridge_white.png"
-                    alt=""
-                    width={50}
-                    height={50}
-                  />
-                </div>
-
-                <h3 className="mt-10 text-2xl font-semibold leading-tight">
-                  Bridges, Pillars & Entrances
-                </h3>
-
-                <p className="mt-4 text-base leading-7 text-black/85">
-                  Bespoke stone structures that combine strength, character and
-                  craftsmanship.
-                </p>
-              </div>
-            </div>
-
-            <div
-              ref={(el) => {
-                serviceRefs.current[2] = el;
-              }}
-              data-index="2"
-              className={`group overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-700 delay-200 ${
-                visibleCards[2]
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-8 opacity-0"
-              } hover:-translate-y-1 hover:shadow-xl`}
-            >
-              <div className="relative h-56 w-full md:h-48">
-                <Image
-                  src="/garden_img.jpg"
-                  alt="Garden walls and features"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-center transition duration-500 group-hover:scale-105 md:object-[50%_55%]"
-                />
-              </div>
-
-              <div className="relative p-5 text-center">
-                <div className="absolute -top-8 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-[#173d22]">
-                  <Image src="/plant_white.png" alt="" width={50} height={50} />
-                </div>
-
-                <h3 className="mt-10 text-2xl font-semibold leading-tight">
-                  Garden Walls & Features
-                </h3>
-
-                <p className="mt-4 text-base leading-7 text-black/85">
-                  Enhance your outdoor space with stunning stone walls, steps,
-                  seating and unique features.
-                </p>
-              </div>
-            </div>
-
-            <div
-              ref={(el) => {
-                serviceRefs.current[3] = el;
-              }}
-              data-index="3"
-              className={`group overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-700 delay-300 ${
-                visibleCards[3]
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-8 opacity-0"
-              } hover:-translate-y-1 hover:shadow-xl`}
-            >
-              <div className="relative h-48 w-full">
-                <Image
-                  src="/oldhouse_img.jpg"
-                  alt="New build and restoration"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 25vw"
-                  className="object-cover object-[50%_42%] transition duration-500 group-hover:scale-105"
-                />
-              </div>
-
-              <div className="relative p-5 text-center">
-                <div className="absolute -top-8 left-1/2 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-[#173d22]">
-                  <Image src="/house_white.png" alt="" width={50} height={50} />
-                </div>
-
-                <h3 className="mt-10 text-2xl font-semibold leading-tight">
-                  New Build & Restoration
-                </h3>
-
-                <p className="mt-4 text-base leading-7 text-black/85">
-                  From new builds to restoration projects, we deliver high
-                  quality stonework that lasts.
-                </p>
-              </div>
-            </div>
+            <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
+              We are happy to have a chat about your plans and advise on the
+              best way forward.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="contact" className="bg-black text-white">
+      <section className="border-t border-white/10 bg-black text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-14 md:grid-cols-2 md:px-6 md:py-20">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#2f8f55]">
@@ -485,7 +253,7 @@ export default function Home() {
               Contact P. Gillespie & Son
             </h2>
 
-            <p className="mt-5 text-base leading-7 text-whit/85 md:text-lg">
+            <p className="mt-5 text-base leading-7 text-white/85 md:text-lg">
               Get in touch for quotes, enquiries or to discuss your stonework
               project across Argyll, Oban and the Western Isles.
             </p>
