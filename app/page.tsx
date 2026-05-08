@@ -207,7 +207,7 @@ export default function Home() {
         <div className="absolute inset-0 md:hidden">
           <Image
             src="/hero-wall1.jpeg"
-            alt="Stone wall work"
+            alt="Dry stone walling and traditional stonework in Argyll and Oban"
             fill
             loading="eager"
             sizes="(max-width: 768px) 100vw, 0px"
@@ -221,7 +221,7 @@ export default function Home() {
         <div className="absolute inset-y-0 right-0 hidden w-[75%] md:block">
           <Image
             src="/hero-wall-ext.png"
-            alt="Stone wall work"
+            alt="Dry stone walling and traditional stonework in Argyll and Oban"
             fill
             loading="eager"
             sizes="(max-width: 768px) 100vw, 75vw"
@@ -238,12 +238,13 @@ export default function Home() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-tight md:text-6xl">
-              Dry Stone Dyking & Stonework in Argyll & Oban
+              Dry Stone Walling, Dyking & Traditional Stonework in Argyll & Oban
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/90 md:text-xl">
-              Over 40 years of experience delivering high-quality stonework
-              across Argyll, Oban and the Western Isles.
+              Family-run stonework specialists with over 40 years of experience
+              building dry stone walls, garden walls, entrances, bridges and
+              restoration work across Argyll, Oban and the Western Isles.
             </p>
 
             <div className="mt-0 flex flex-col items-start gap-4 md:mt-8 md:flex-row">
@@ -311,7 +312,7 @@ export default function Home() {
             </p>
 
             <h2 className="mt-2 text-4xl font-semibold leading-tight md:text-5xl">
-              Expert Stonework Services
+              Traditional Stonework & Dry Stone Walling Services
             </h2>
 
             <div className="mx-auto mt-4 h-[2px] w-16 bg-[#2f8f55]" />
@@ -332,7 +333,7 @@ export default function Home() {
               <div className="relative h-48 w-full">
                 <Image
                   src="/wall_img1.jpg"
-                  alt="Dry stone dyking"
+                  alt="Traditional dry stone dyking and walling in Argyll"
                   fill
                   sizes="(max-width: 768px) 100vw, 25vw"
                   className="object-cover object-[50%_70%] transition duration-500 group-hover:scale-105"
@@ -369,7 +370,7 @@ export default function Home() {
               <div className="relative h-48 w-full">
                 <Image
                   src="/bridge_img.jpg"
-                  alt="Bridges, pillars and entrances"
+                  alt="Stone bridges, pillars and entrances built in Argyll and Oban"
                   fill
                   sizes="(max-width: 768px) 100vw, 25vw"
                   className="object-cover object-[50%_42%] transition duration-500 group-hover:scale-105"
@@ -411,7 +412,7 @@ export default function Home() {
               <div className="relative h-56 w-full md:h-48">
                 <Image
                   src="/garden_img.jpg"
-                  alt="Garden walls and features"
+                  alt="Stone garden walls, steps and outdoor features"
                   fill
                   sizes="(max-width: 768px) 100vw, 25vw"
                   className="object-cover object-center transition duration-500 group-hover:scale-105 md:object-[50%_55%]"
@@ -448,7 +449,7 @@ export default function Home() {
               <div className="relative h-48 w-full">
                 <Image
                   src="/oldhouse_img.jpg"
-                  alt="New build and restoration"
+                  alt="Stonework restoration and new build masonry projects"
                   fill
                   sizes="(max-width: 768px) 100vw, 25vw"
                   className="object-cover object-[50%_42%] transition duration-500 group-hover:scale-105"
@@ -486,8 +487,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-5 text-base leading-7 text-whit/85 md:text-lg">
-              Get in touch for quotes, enquiries or to discuss your stonework
-              project across Argyll, Oban and the Western Isles.
+              Get in touch for quotes, enquiries or to discuss dry stone
+              walling, stonework, restoration or garden wall projects across
+              Argyll, Oban and the Western Isles.
             </p>
           </div>
 

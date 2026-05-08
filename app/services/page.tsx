@@ -172,7 +172,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 md:hidden">
           <Image
             src="/hero-wall1.jpeg"
-            alt="Stone wall work"
+            alt="Dry stone walling, dyking and stonework services in Argyll and Oban"
             fill
             sizes="100vw"
             className="object-cover object-[58%_45%]"
@@ -183,7 +183,7 @@ export default function ServicesPage() {
         <div className="absolute inset-y-0 right-0 hidden w-[75%] md:block">
           <Image
             src="/hero-wall-ext.png"
-            alt="Stone wall work"
+            alt="Dry stone walling, dyking and stonework services in Argyll and Oban"
             fill
             sizes="75vw"
             className="object-cover object-[75%_center] md:object-center"
@@ -202,13 +202,13 @@ export default function ServicesPage() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-tight md:text-6xl">
-              Expert stonework services built to last
+              Dry Stone Walling, Dyking & Stonework Services in Argyll
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/90 md:text-xl">
-              From dry stone dyking to restoration and bespoke features, we
-              deliver high-quality stonework across Argyll, Oban and the Western
-              Isles.
+              From dry stone walling and dyking to restoration, garden walls and
+              bespoke stone features, we deliver high-quality stonework across
+              Argyll, Oban and the Western Isles.
             </p>
           </div>
         </div>
@@ -222,26 +222,29 @@ export default function ServicesPage() {
             </p>
 
             <h2 className="mt-3 text-4xl font-semibold leading-tight md:text-5xl">
-              Traditional stonework services across Argyll and the Western Isles
+              Traditional Stonework, Garden Walls & Restoration Services
             </h2>
 
             <p className="mt-6 text-base leading-7 text-black/85 md:text-lg">
-              P. Gillespie & Son carry out a wide range of traditional stonework
-              services, combining reliable workmanship with over 40 years of
-              experience in the trade.
+              P. Gillespie & Son provide traditional stonework services across
+              Argyll, Oban and the Western Isles, combining reliable workmanship
+              with over 40 years of experience in dry stone dyking, walling and
+              natural stone construction.
             </p>
 
             <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
-              Work includes dry stone dyking, new build and repair work,
-              bridges, pillars, entranceways, garden walls, retaining walls,
-              steps, seats and bespoke stone features. Projects range from small
-              domestic jobs to larger farm walls and road construction work.
+              Work includes dry stone dykes, stone walls, new build and repair
+              work, bridges, pillars, entranceways, garden walls, retaining
+              walls, steps, seats and bespoke stone features. Projects range
+              from small domestic jobs to larger farm walls, estate work and
+              roadside stone construction.
             </p>
 
             <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
               Every project is built to suit its setting, whether it is a
-              practical boundary wall, a restoration job or a feature designed
-              to complement a country house or garden.
+              practical boundary wall, a dry stone wall repair, a restoration
+              job or a feature designed to complement a country house, garden or
+              rural property.
             </p>
           </div>
         </div>
@@ -259,8 +262,9 @@ export default function ServicesPage() {
             </h2>
 
             <p className="mt-5 text-base leading-7 text-white/85 md:text-lg">
-              Get in touch for quotes, enquiries or to discuss your stonework
-              project across Argyll, Oban and the Western Isles.
+              Get in touch for quotes, enquiries or to discuss dry stone
+              walling, stonework, restoration or garden wall projects across
+              Argyll, Oban and the Western Isles.
             </p>
           </div>
 

@@ -172,7 +172,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 md:hidden">
           <Image
             src="/hero-wall1.jpeg"
-            alt="Stone wall work"
+            alt="Traditional dry stone walling and stonework by P. Gillespie and Son"
             fill
             sizes="100vw"
             className="object-cover object-[58%_45%]"
@@ -183,7 +183,7 @@ export default function AboutPage() {
         <div className="absolute inset-y-0 right-0 hidden w-[75%] md:block">
           <Image
             src="/hero-wall-ext.png"
-            alt="Stone wall work"
+            alt="Traditional dry stone walling and stonework by P. Gillespie and Son"
             fill
             sizes="75vw"
             className="object-cover object-[75%_center] md:object-center"
@@ -202,12 +202,12 @@ export default function AboutPage() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-tight md:text-6xl">
-              Over 40 years of trusted stonework experience
+              Over 40 Years of Dry Stone Walling & Stonework Experience
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/90 md:text-xl">
-              Traditional craftsmanship, reliable service and high-quality
-              stonework across Argyll, Oban and the Western Isles.
+              Family-run dry stone dyking, walling and traditional stonework
+              specialists serving Argyll, Oban and the Western Isles.
             </p>
           </div>
         </div>
@@ -221,29 +221,31 @@ export default function AboutPage() {
             </p>
 
             <h2 className="mt-3 text-4xl font-semibold leading-tight md:text-5xl">
-              Traditional Dry Stone Dyking & Stonework
+              Family-Run Dry Stone Dyking & Traditional Stonework
             </h2>
 
             <p className="mt-6 text-base leading-7 text-black/85 md:text-lg">
-              Pat Gillespie & Son are specialists in traditional dry stone
-              dyking and stonework, based in Argyll. With over 40 years of
-              experience, the business has built a strong reputation for
-              reliable workmanship and high-quality finishes across Scotland and
-              the Western Isles.
+              P. Gillespie & Son are family-run specialists in traditional dry
+              stone dyking, dry stone walling and stonework, based in Argyll.
+              With over 40 years of experience, the business has built a strong
+              reputation for reliable workmanship, natural stone construction
+              and high-quality finishes across Oban, Argyll and the Western
+              Isles.
             </p>
 
             <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
-              Services include new builds and repairs such as dry stone dykes,
-              bridges, pillars, entranceways, garden walls, retaining walls,
-              steps and bespoke stone features. From small garden projects to
-              large-scale farm and road construction work, every job is
-              completed to a high standard.
+              Services include new builds and repairs for dry stone dykes, stone
+              walls, bridges, pillars, entranceways, garden walls, retaining
+              walls, steps and bespoke stone features. From small garden
+              projects to larger farm, estate and roadside stonework, every job
+              is completed with care, strength and attention to detail.
             </p>
 
             <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
-              Work is tailored to complement traditional and modern properties,
-              ensuring each project fits naturally within its surroundings. No
-              job is too big or too small.
+              Each project is built to complement traditional and modern
+              properties, using stonework that fits naturally within the
+              surrounding landscape. From repairs to full new builds, no job is
+              too big or too small.
             </p>
           </div>
         </div>
@@ -261,8 +263,9 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-5 text-base leading-7 text-white/85 md:text-lg">
-              Get in touch for quotes, enquiries or to discuss your stonework
-              project across Argyll, Oban and the Western Isles.
+              Get in touch for quotes, enquiries or to discuss dry stone
+              walling, stonework, restoration or garden wall projects across
+              Argyll, Oban and the Western Isles.
             </p>
           </div>
 

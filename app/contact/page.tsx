@@ -172,7 +172,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 md:hidden">
           <Image
             src="/hero-wall1.jpeg"
-            alt="Stone wall work"
+            alt="Contact P. Gillespie and Son for dry stone walling and stonework in Argyll"
             fill
             sizes="100vw"
             className="object-cover object-[58%_45%]"
@@ -182,7 +182,7 @@ export default function ContactPage() {
         <div className="absolute inset-y-0 right-0 hidden w-[75%] md:block">
           <Image
             src="/hero-wall-ext.png"
-            alt="Stone wall work"
+            alt="Contact P. Gillespie and Son for dry stone walling and stonework in Argyll"
             fill
             sizes="75vw"
             className="object-cover object-[75%_center] md:object-center"
@@ -200,12 +200,13 @@ export default function ContactPage() {
             </p>
 
             <h1 className="text-5xl font-semibold leading-tight md:text-6xl">
-              Get in touch with P. Gillespie & Son
+              Contact P. Gillespie & Son for Stonework in Argyll & Oban
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/90 md:text-xl">
-              Contact us for quotes, enquiries or to discuss your stonework
-              project across Argyll, Oban and the Western Isles.
+              Contact us for dry stone walling, dyking, restoration, garden
+              walls and traditional stonework projects across Argyll, Oban and
+              the Western Isles.
             </p>
           </div>
         </div>
@@ -219,24 +220,26 @@ export default function ContactPage() {
             </p>
 
             <h2 className="mt-3 text-4xl font-semibold leading-tight md:text-5xl">
-              Speak to us about your stonework project
+              Request a Quote for Dry Stone Walling & Stonework
             </h2>
 
             <p className="mt-6 text-base leading-7 text-black/85 md:text-lg">
-              P. Gillespie & Son provide traditional dry stone dyking and
-              stonework across Argyll, Oban and the Western Isles.
+              P. Gillespie & Son provide traditional dry stone dyking, dry stone
+              walling, garden walls, restoration work and natural stonework
+              across Argyll, Oban and the Western Isles.
             </p>
 
             <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
-              Whether you are planning a new build, repair work, retaining wall,
-              garden feature, entranceway, steps, seating area or another
-              stonework project, get in touch to discuss the job and request a
-              quote.
+              Whether you are planning a new dry stone wall, repair work,
+              retaining wall, garden feature, entranceway, steps, seating area
+              or another stonework project, get in touch to discuss the job and
+              request a quote.
             </p>
 
             <p className="mt-5 text-base leading-7 text-black/85 md:text-lg">
-              We are happy to have a chat about your plans and advise on the
-              best way forward.
+              We are happy to discuss your plans, advise on the best approach
+              and provide a quote for stonework projects across Argyll, Oban and
+              the surrounding areas.
             </p>
           </div>
         </div>
@@ -254,8 +257,9 @@ export default function ContactPage() {
             </h2>
 
             <p className="mt-5 text-base leading-7 text-white/85 md:text-lg">
-              Get in touch for quotes, enquiries or to discuss your stonework
-              project across Argyll, Oban and the Western Isles.
+              Get in touch for quotes, enquiries or to discuss dry stone
+              walling, stonework, restoration or garden wall projects across
+              Argyll, Oban and the Western Isles.
             </p>
           </div>
 
