@@ -3,23 +3,23 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://pgillespieandson.co.uk",
+      url: "https://gillespiestonework.vercel.app",
       lastModified: new Date(),
     },
     {
-      url: "https://pgillespieandson.co.uk/about",
+      url: "https://gillespiestonework.vercel.app/about",
       lastModified: new Date(),
     },
     {
-      url: "https://pgillespieandson.co.uk/services",
+      url: "https://gillespiestonework.vercel.app/services",
       lastModified: new Date(),
     },
     {
-      url: "https://pgillespieandson.co.uk/gallery",
+      url: "https://gillespiestonework.vercel.app/gallery",
       lastModified: new Date(),
     },
     {
-      url: "https://pgillespieandson.co.uk/contact",
+      url: "https://gillespiestonework.vercel.app/contact",
       lastModified: new Date(),
     },
   ];
