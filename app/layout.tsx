@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
@@ -6,16 +6,6 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  viewportFit: "cover",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#173d22" },
-    { media: "(prefers-color-scheme: dark)", color: "#173d22" },
-  ],
-};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gillespiestonework.vercel.app"),
@@ -76,10 +66,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full bg-[#173d22] antialiased">
-      <body
-        className={`${cormorant.className} min-h-full bg-[#173d22] text-white`}
-      >
+    <html lang="en" className="h-full antialiased">
+      <body className={`${cormorant.className} min-h-full bg-black text-white`}>
         {children}
       </body>
     </html>
