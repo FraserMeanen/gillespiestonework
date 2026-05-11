@@ -486,7 +486,7 @@ export default function Home() {
               Contact P. Gillespie & Son
             </h2>
 
-            <p className="mt-5 text-base leading-7 text-whit/85 md:text-lg">
+            <p className="mt-5 text-base leading-7 text-white/85 md:text-lg">
               Get in touch for quotes, enquiries or to discuss dry stone
               walling, stonework, restoration or garden wall projects across
               Argyll, Oban and the Western Isles.
@@ -582,6 +582,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-white/10 bg-black px-4 py-5 text-center text-xs text-white/40">
+        <p>© 2026 P. Gillespie & Son. All rights reserved.</p>
+        <p className="mt-1">
+          Website by{" "}
+          <a
+            href="https://www.fm-digital.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-[#2f8f55]"
+          >
+            FM Digital
+          </a>
+          .
+        </p>
+      </footer>
     </main>
   );
 }

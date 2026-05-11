@@ -8,15 +8,16 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gillespie-site.vercel.app"),
+  metadataBase: new URL("https://gillespiestonework.vercel.app"),
 
   title: {
-    default: "P. Gillespie & Son | Dry Stone Walling & Stonework in Argyll",
-    template: "%s | P. Gillespie & Son",
+    default:
+      "Dry Stone Walling in Argyll by P Gillespie and Son Stonework",
+    template: "%s | P Gillespie and Son Stonework",
   },
 
   description:
-    "P. Gillespie & Son provide dry stone walling, dyking, traditional stonework, restoration, garden walls and bespoke stone features across Argyll, Oban and the Western Isles.",
+    "P Gillespie and Son Stonework provide dry stone walling, dry stone dyking, traditional stonework, restoration, garden walls, entrances and bespoke stone features across Argyll, Oban and the Western Isles.",
 
   icons: {
     icon: "/icon.png",
@@ -25,17 +26,17 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "P. Gillespie & Son | Dry Stone Walling & Stonework in Argyll",
+    title: "Dry Stone Walling in Argyll by P Gillespie and Son Stonework",
     description:
-      "Family-run dry stone walling, dyking and traditional stonework specialists serving Argyll, Oban and the Western Isles.",
-    url: "https://gillespie-site.vercel.app",
-    siteName: "P. Gillespie & Son",
+      "Traditional dry stone dyking, walling and stonework based in Argyll, with over 40 years of experience across Oban and the Western Isles.",
+    url: "https://gillespiestonework.vercel.app",
+    siteName: "P Gillespie and Son Stonework",
     images: [
       {
         url: "/hero-wall-ext.png",
         width: 1200,
         height: 630,
-        alt: "Dry stone walling and traditional stonework by P. Gillespie and Son",
+        alt: "Dry stone walling and traditional stonework by P Gillespie and Son Stonework",
       },
     ],
     locale: "en_GB",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "P. Gillespie & Son | Dry Stone Walling & Stonework in Argyll",
+    title: "Dry Stone Walling in Argyll by P Gillespie and Son Stonework",
     description:
       "Dry stone walling, dyking and traditional stonework across Argyll, Oban and the Western Isles.",
     images: ["/hero-wall-ext.png"],

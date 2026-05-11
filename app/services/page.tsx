@@ -357,6 +357,22 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-white/10 bg-black px-4 py-5 text-center text-xs text-white/40">
+        <p>© 2026 P. Gillespie & Son. All rights reserved.</p>
+        <p className="mt-1">
+          Website by{" "}
+          <a
+            href="https://www.fm-digital.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-[#2f8f55]"
+          >
+            FM Digital
+          </a>
+          .
+        </p>
+      </footer>
     </main>
   );
 }
