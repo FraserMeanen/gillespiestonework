@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
@@ -63,11 +64,11 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className={`${cormorant.className} min-h-full bg-black text-white`}>
+      <body className={`${cormorant.className} flex min-h-full flex-col`}>
         {children}
       </body>
     </html>
